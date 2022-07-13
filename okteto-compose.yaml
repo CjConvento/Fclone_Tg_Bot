@@ -1,0 +1,9 @@
+version: "18.04"
+services:
+  worker:
+    build: .
+    environment:
+      - GC_PARA_OVERRIDE=${GC_PARA_OVERRIDE}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - GRP_ID=${GRP_ID}
+      - USER_ID=${USER_ID}
